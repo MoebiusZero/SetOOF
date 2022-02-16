@@ -17,5 +17,5 @@ Yes, it uses HtmlAgilityPack, NewtonSoft.Json, RestSharp and Costura.Fody.
 I just like to compile it into a single exe file instead of having dll files everywhere. 
 The other dependancies should be self explanatory. If not...
 - **HTMLagility pack** to convert the out of office messages 
-- **Newtonsoft** to make the JSON results readable but also to send the changes in readable JSON format for the API
+- **Newtonsoft** to make the JSON results readable but also to send the changes in readable JSON format to the API
 - **RestSharp** Required to make the calls to the API. 
