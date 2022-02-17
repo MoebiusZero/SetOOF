@@ -299,7 +299,7 @@ namespace SetOFF
         //Get Bearer Token Function
         public string GetToken()
         {
-            var client = new RestClient("https://login.microsoftonline.com/55d3a4d7-4f89-4a9a-a563-6a9eb409e552/oauth2/v2.0/token");
+            var client = new RestClient("https://login.microsoftonline.com/<TENANT_ID HERE>/oauth2/v2.0/token");
             client.Timeout = -1;
             var request = new RestRequest(Method.POST);
             request.AddParameter("Grant_Type", "client_credentials");
@@ -327,11 +327,6 @@ namespace SetOFF
                 datetime_end.Enabled = true;
                 datetime_start.Enabled = true;
             }                     
-        }
-
-        private void pic_logo_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://imgur.com/a/3dlRpgO");
         }
     }
 }
